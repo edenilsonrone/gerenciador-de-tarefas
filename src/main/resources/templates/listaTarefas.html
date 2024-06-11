@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/estilo.css}" />
+</head>
+<body>
+<h1>Lista de Tarefas</h1>
+<ul>
+  <li th:each="tarefa : ${tarefas}">
+    <span th:text="${tarefa.descricao}">Descrição da tarefa</span>
+    <span th:if="${tarefa.concluida}" class="concluida">(Concluída)</span>
+    <span th:unless="${tarefa.concluida}" class="pendente">(Pendente)</span>
+  </li>
+</ul>
+</body>
+</html>

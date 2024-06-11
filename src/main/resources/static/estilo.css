@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+li span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+li span.concluida {
+    color: green;
+    font-weight: bold;
+}
+
+li span.pendente {
+    color: red;
+    font-weight: bold;
+}
